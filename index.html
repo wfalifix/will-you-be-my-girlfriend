@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>A Little Question for You ❤️</title>
+    <meta name="theme-color" content="#190b12">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+    <div id="floating-hearts" aria-hidden="true"></div>
+    <div id="confetti" aria-hidden="true"></div>
+
+    <header class="topbar">
+        <a href="#" class="brand">
+            <span class="brand-heart">♥</span> just for you
+        </a>
+        <span class="top-label">A LITTLE SURPRISE <span>✦</span></span>
+    </header>
+
+    <main class="main-container">
+
+        <!-- SCREEN 1: THE PROPOSAL -->
+        <section class="screen active" id="proposal-screen">
+
+            <div class="eyebrow">
+                <span>✦</span> A VERY IMPORTANT QUESTION <span>✦</span>
+            </div>
+
+            <div class="hero-heart" aria-hidden="true">
+                <div class="heart-glow"></div>
+                <span>♥</span>
+                <span class="mini-heart mini-one">♥</span>
+                <span class="mini-heart mini-two">♥</span>
+            </div>
+
+            <p class="script-text">To my favourite person...</p>
+
+            <h1>
+                Hey, <span class="recipient-name">My Love</span>.
+                <br>
+                Will you be my
+                <span class="highlight">Girlfriend?</span>
+            </h1>
+
+            <p class="description" id="love-message">
+                Life feels a little more beautiful with you in it.
+                So, I have one tiny question to ask...
+            </p>
+
+            <div class="proposal-actions">
+                <div class="button-arena" id="button-arena">
+                    <button class="btn btn-yes" id="yes-btn">
+                        YES, ABSOLUTELY <span>♥</span>
+                    </button>
+
+                    <button class="btn btn-no" id="no-btn">
+                        No 🙈
+                    </button>
+                </div>
+
+                <p class="reaction" id="reaction" aria-live="polite">
+                    Choose wisely... my heart is watching 👀
+                </p>
+
+                <button class="quiet-no" id="quiet-no" hidden>
+                    I really don't want to
+                </button>
+            </div>
+
+            <div class="little-note">
+                <span>♡</span> Made with a little extra love
+            </div>
+        </section>
+
+
+        <!-- SCREEN 2: DATE PLANNER -->
+        <section class="screen" id="date-screen" hidden>
+
+            <div class="eyebrow">
+                <span>✦</span> YOU JUST MADE MY DAY <span>✦</span>
+            </div>
+
+            <div class="celebration-heart" aria-hidden="true">💖</div>
+
+            <p class="script-text">I knew you had good taste!</p>
+
+            <h2>It's a date, <span class="recipient-name">My Love</span>! 🥹</h2>
+
+            <p class="description">
+                Now let's plan something special.
+                Pick your dream date below.
+            </p>
+
+            <form id="date-form" class="date-card">
+
+                <label for="date">
+                    <span class="field-icon">♡</span> When should we meet?
+                </label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">
+                    <span class="field-icon">♡</span> What time works for you?
+                </label>
+                <input type="time" id="time" name="time" required>
+
+                <label for="date-type">
+                    <span class="field-icon">♡</span> What's our kind of date?
+                </label>
+                <select id="date-type" name="date-type" required>
+                    <option value="A romantic dinner">Romantic dinner 🕯️</option>
+                    <option value="A movie date">Movie date 🎬</option>
+                    <option value="A cute picnic">Cute picnic 🌷</option>
+                    <option value="A fun adventure">Fun adventure 🎡</option>
+                    <option value="A cosy date at home">Cosy date at home 🧸</option>
+                    <option value="A surprise date">Surprise me! 🎁</option>
+                </select>
+
+                <label for="extra-note">
+                    <span class="field-icon">♡</span> Any special requests?
+                    <span class="optional">(optional)</span>
+                </label>
+                <textarea id="extra-note" rows="2"
+                    placeholder="Flowers, chocolate, extra hugs..."></textarea>
+
+                <button class="btn btn-yes btn-wide" type="submit">
+                    PLAN OUR DATE <span>♡</span>
+                </button>
+
+            </form>
+
+            <button class="text-button" id="back-btn">
+                ← Back to our little moment
+            </button>
+        </section>
+
+
+        <!-- SCREEN 3: FINAL CELEBRATION -->
+        <section class="screen" id="final-screen" hidden>
+
+            <div class="eyebrow">
+                <span>✦</span> OFFICIALLY MY GIRLFRIEND💗 <span>✦</span>
+            </div>
+
+            <div class="final-heart" aria-hidden="true">💗</div>
+
+            <p class="script-text">This is the beginning of something sweet...</p>
+
+            <h2>YAYYYY! <span class="highlight">It's a date!</span></h2>
+
+            <p class="description">
+                <span class="recipient-name">My Love</span>,
+                you just made this heart ridiculously happy.
+            </p>
+
+            <article class="love-card">
+                <div class="love-card-top">♡ A LITTLE LOVE NOTE ♡</div>
+
+                <h3>Dear <span class="recipient-name">My Love</span>,</h3>
+
+                <p id="final-love-message">
+                    You make ordinary moments feel special.
+                    I'm grateful for you, and I can't wait
+                    to make another beautiful memory together.
+                </p>
+
+                <div class="signature">
+                    Forever your admirer, <span>♥</span>
+                </div>
+            </article>
+
+            <article class="date-summary">
+                <p class="summary-heading">OUR LITTLE PLAN ✨</p>
+                <p id="summary-date">📅 Our special day</p>
+                <p id="summary-time">🕒 Our special time</p>
+                <p id="summary-type">🌹 Our date</p>
+                <p id="summary-note" hidden></p>
+            </article>
+
+            <button class="btn btn-yes btn-wide" id="share-btn">
+                SHARE OUR PLANS ON WHATSAPP <span>♡</span>
+            </button>
+
+            <p class="reaction" id="share-message" aria-live="polite"></p>
+
+            <button class="text-button" id="restart-btn">
+                Relive the magic ↻
+            </button>
+
+            <div class="little-note">
+                <span>♥</span> One question. One little yes. A beautiful memory.
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        A LITTLE LOVE GOES A LONG WAY <span>♥</span>
+    </footer>
+
+</body>
+</html>
